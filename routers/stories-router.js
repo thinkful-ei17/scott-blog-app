@@ -5,11 +5,11 @@ const router = express.Router();
 // const knex = require('knex');
 // const pg = require('pg');
 var data = require('../db/dummy-data');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const { DATABASE } = require('../config');
 const knex = require('knex')(DATABASE);
 
-router.use(bodyParser.json());
+// router.use(bodyParser.json());
 
 /* ========== GET/READ ALL ITEMS ========== */
 router.get('/stories', (req, res, next) => {
